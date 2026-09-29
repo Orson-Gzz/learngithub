@@ -1,1 +1,2 @@
-print("mamaa")
+print("mamaaa")
+print(11)
