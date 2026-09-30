@@ -6,3 +6,7 @@ mama/
 
 #直接文件名
 zyc.py
+
+#加入gitignore的文件若已经被git追踪，则需要先
+#git rm --cached <文件名>
+
