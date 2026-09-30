@@ -1,2 +1,2 @@
-print("mamaaa")
-print(11)
+print("mamaa")
+print(111)

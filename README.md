@@ -25,3 +25,22 @@ git ls-files 看git一共追踪了哪些文件
 
 git diff 查看工作区(需先保存到磁盘)与暂存区的代码区别
 git diff --staged 查看暂存区与上一次提交代码区别
+看代码异同建议在vscode中看
+
+撤回的多种方法
+    
+    没有commit时
+    git restore README.md 将指定文件覆盖为到上一次提交的文件
+    git restore --staged README.md 将指定文件覆盖为上一次提交的文件，改动会没，工作区改为上次工作区
+    
+    commit后
+        
+        还没push
+        git reset <提交号> 回退到指定版本，改动回到工作区
+        git reset <提交号> 回退到指定版本，改动删除，工作区与上次提交时相同
+
+        push后
+        git revert <提交号> 交一笔反向的新提交
+
+
+写gitignore：看.ignore文件
